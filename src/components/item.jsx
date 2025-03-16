@@ -4,6 +4,7 @@ import Modal from "./modal";
 
 function Item({t,deleteTitle}) {
 const [showModal, setShowModal] = useState(false);
+ 
 return (
     <>
     {showModal &&<Modal deleteTitle={deleteTitle} setShowModal={setShowModal} t={t}/>}
@@ -12,7 +13,7 @@ return (
                 <button className="deleteButton" onClick={()=> setShowModal(true)}>delete</button>
                 
                 </li> 
-    </>
-)
+   </>
+) 
 } 
 export default Item;
